@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Helló belló kulabácsi</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 60px;
+            background-color: bisque;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            background-color: #004d00;
+            text-align: center;
+            line-height: 60px;
+            box-shadow: 0px 1px 14px -1px #000000;
+            top: 0px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        #logo {
+            height: 50px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        header>span {
+            font-size: 30px;
+            color: #fff;
+        }
+
+        .menuitem {
+            color: #fff;
+            float: right;
+            margin-right: 10px;
+        }
+
+        #banner {
+            width: 100%;
+        }
+
+        p {
+            text-align: justify;
+            margin: 20px;
+            line-height: 130%;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        td {
+            padding: 0px 10px;
+        }
+
+        td>img {
+            max-width: 100%;
+        }
+
+        #table-wrapper {
+            padding: 0px 10px;
+        }
+
+        footer {
+            background-color: #333;
+            height: 100px;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            color: #fff;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0px 20px;
+        }
+        #img-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0px 20px;
+            margin: 0px 20px 20px 20px;
+        }
+        #img-container > img{
+            width: 100%;
+        }
+        @media screen and (max-width: 600px) {
+            #img-container{
+                grid-template-columns: 1fr;
+                gap: 20px 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <img src="header_logo.png" id="logo">
+        </a>
+        <span>COMPANY</span>
+        <div>
+        <a href="" class="menuitem">Menu3</a>
+        <a href="" class="menuitem">Menu2</a>
+        <a href="" class="menuitem">Menu1</a>
+    </div>
+    </header>
+
+    <img src="banner.jpg" id="banner">
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed fringilla felis, eget blandit ipsum. Nullam euismod sed dolor eu faucibus. Aliquam finibus mollis tortor, ut tincidunt nisi dictum a. Maecenas ornare est at lorem varius cursus. Sed ut tortor ante. Ut nulla sapien, pharetra id semper viverra, laoreet nec tellus. Donec ullamcorper eros at sem maximus aliquam. Praesent fringilla ipsum at dui interdum malesuada sit amet nec nisi. Quisque neque tortor, feugiat eu feugiat sit amet, bibendum quis turpis. Nulla eget felis dapibus, porttitor lacus at, convallis libero. Sed sollicitudin nec ipsum consectetur ultricies. Praesent est orci, vehicula sed sagittis sit amet, ullamcorper vel metus. Proin suscipit lacinia libero quis imperdiet.
+
+        Sed sagittis tincidunt nisi, sed sollicitudin urna. Donec vulputate tellus id elementum fermentum. Nam egestas vitae metus a convallis. Phasellus sit amet vehicula nisi. Phasellus ante tellus, interdum ut mollis rutrum, lacinia sodales lorem. Integer vitae diam ex. Nulla facilisi. Pellentesque sollicitudin enim non odio pretium scelerisque. Praesent sed luctus dui, ac dictum dolor.
+    </p>
+
+    <div id="img-container">
+        <img src="1.jpg" alt="">
+        <img src="2.jpg" alt="">
+    </div>
+    <div id="grid">
+        <div>11</div>
+        <div>22</div>
+        <div>33</div>
+    </div>
+
+    <footer>
+        Copyright
+    </footer>
+
+</body>
+
+</html>
